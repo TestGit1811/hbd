@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Pacifico";
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    margin: 10px 0px;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: #ff8db7;
+}
+
+.cards{
+    display: flex;
+}
+
+.gifs{
+    margin: 150px 0px;
+}
+
+button{
+    background-color: #ac0a76;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-left: 92vh;
+    transition: ease 0.5s;
+    font-size: 20px;
+}
+
+button a{
+    color: #fff;
+    display: block;
+}
+button:hover{
+    transform: scale(1.3);
+}
+
+.flip-card {
+    margin-left: 22.5vh;
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    border-radius: 15px;
+    /* background-color: #9c1345; */
+    background-image: linear-gradient(to bottom right,#ff00e1,#315ff5,#2a0c97,#e20b9a);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-image: linear-gradient(to bottom right,#ff00e1,#315ff5,#2a0c97,#e20b9a);
+    border-radius: 15px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+  }
