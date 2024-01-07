@@ -38,6 +38,7 @@ body{
 
 button{
     background-color: #ac0a76;
+    color: #fff;
     padding: 5px 15px;
     border: none;
     border-radius: 8px;
@@ -50,14 +51,6 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-button a{
-    color: #fff;
-    display: block;
-}
-/* button:hover{
-    transform: scale(1.3);
-} */
 
 .flip-card {
     margin-left: 22.5vh;
