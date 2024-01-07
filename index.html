@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>The dumbest friend you can find online!</h1>
-    <h2 style="color: #fff; text-align: center;">(Warning: This specimen comes with a very high hours-taken-to-reply rate)</h2>
+    <h2 style="color: red; text-align: center;">(Warning: This specimen comes with a very high hours-taken-to-reply rate)</h2>
     <h1>Top 3 Features</h1>
     <div class="cards">
     <div class="flip-card">
@@ -17,7 +17,7 @@
             <img src="https://media.giphy.com/media/h3Wajg3GZSlzdpT46r/giphy.gif" alt="Avatar" style="width:300px;height:300px;margin-top: 25px;">
           </div>
           <div class="flip-card-back">
-            <h2>✨Drosophilia✨</h2>
+            <h2>✨PhD : Pretty Huge Drosophila✨</h2>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@
             <img src="https://media.giphy.com/media/h3Wajg3GZSlzdpT46r/giphy.gif" alt="Avatar" style="width:300px;height:300px;margin-top: 25px;">
           </div>
           <div class="flip-card-back">
-            <h2>✨Beauty Sleep✨</h2>
+            <h2>✨Needs 10 hour Beauty sleep✨</h2>
           </div>
         </div>
       </div>
@@ -37,17 +37,31 @@
             <img src="https://media.giphy.com/media/h3Wajg3GZSlzdpT46r/giphy.gif" alt="Avatar" style="width:300px;height:300px;margin-top: 25px;">
           </div>
           <div class="flip-card-back">
-            <h2>✨Cat Lover✨</h2>
+            <h2>✨Worst typer known to mankind✨</h2>
           </div>
         </div>
       </div>
     </div>
-    <button><a href="#wish">Click Me For A Surprise</a></button>
-    <div class="gifs">
-    <img src="https://media.giphy.com/media/XWR4jehW2X2E0/giphy.gif" alt="" style="width: 480px; height: 440px; ">
-    <img src="https://media.giphy.com/media/5ullrtbjTwAzDoLkbb/giphy.gif" alt="">
-    <img src="https://media.giphy.com/media/GPV6LaVEUPhvKlsJcv/giphy.gif" alt="">
-    </div>
-    <div id="wish"></div>
+    <button id="myButton" onclick="handleButtonClick()">Click Me For A Surprise</button>
 </body>
+<script>
+let clickCount = 0;
+
+function handleButtonClick() {
+    clickCount++;
+
+    if (clickCount <= 2) {
+        // Change button position on the first two clicks
+        document.getElementById('myButton').style.top = `${Math.random() * 100}%`;
+        document.getElementById('myButton').style.left = `${Math.random() * 100}%`;
+
+        // Display warning message
+        alert(`HAHAHAHAH FIND THE BUTTON AND CLICK AGAINNNNNN`);
+    } else {
+        // Redirect to wish.html on any further clicks
+        window.location.href = 'wish.html';
+    }
+}
+</script>
+
 </html>
