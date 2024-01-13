@@ -53,11 +53,8 @@ function handleButtonClick() {
     if (clickCount <= 2) {
         // Change button position on the first two clicks
         document.getElementById('myButton').style.top = `${Math.random() * 100}%`;
-        document.getElementById('myButton').innerHTML = "Hahahahah Try Clicking Again";
         document.getElementById('myButton').style.left = `${Math.random() * 100}%`;
-        document.getElementById('myButton').innerHTML = "Oki I will not move again Promise!";
-
-        
+        document.getElementById('myButton').innerHTML = "Oops! Click Again Maybe?";
     } else {
         // Redirect to wish.html on any further clicks
         window.location.href = 'wish.html';
